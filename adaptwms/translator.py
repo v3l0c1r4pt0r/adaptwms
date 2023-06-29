@@ -20,3 +20,8 @@ class Translator:
     left, top = transform(self.degree_proj, self.mercator_proj, left_degrees, top_degrees)
     right, bottom = transform(self.degree_proj, self.mercator_proj, right_degrees, bottom_degrees)
     return left, top, right, bottom
+
+  def translate(self, x, y, z, template):
+    left, top, right, bottom = self.slippy2bbox(x, y, z)
+    bbox = f'{left},{top},{right},{bottom}'
+    return template.replace("{bbox}", bbox)
