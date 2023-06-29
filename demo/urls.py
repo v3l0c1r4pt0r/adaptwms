@@ -20,5 +20,6 @@ from adaptwms import views
 
 urlpatterns = [
     path("", views.interface_view),
+    path("adaptwms", views.adapter_view),
     path("admin/", admin.site.urls),
 ]
