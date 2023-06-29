@@ -19,7 +19,7 @@ from django.urls import path
 from adaptwms import views
 
 urlpatterns = [
-    path("", views.interface_view),
+    path("", views.InterfaceView.as_view(), name='adaptwms-gui'),
     path("adaptwms", views.adapter_view),
     path("admin/", admin.site.urls),
 ]
