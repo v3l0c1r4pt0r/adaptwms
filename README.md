@@ -29,6 +29,22 @@ These are the known constraints:
 - WMS service you use must allow unauthenticated access (there is no way for passing credentials in any form at the moment)
 - it must support **EPSG:3857** coordinate system
 
-## How to use it?
+## How to use it...
+
+### ...if I don't have experience with Django
+
+This makes use of this Github project and demo project it supplies. Best for testing, or temporary deployement.
+
+**TODO**: write
+
+### ...if I do have some experience with Django
+
+This makes use of pip package available on PyPI and Django project that you have, or want to set up. Best for production environments.
 
 1. Make sure you have Python and pip installed
+2. Start new django project: `django-admin startproject demo .`, where demo is its name, or use existing one
+3. Install adaptwms from PyPI: `pip install adaptwms`
+4. Add `adaptwms` to your `INSTALLED_APPS` in settings.py
+5. Add `path("adaptwms/", adaptwms.views.adapter_view),` to your urlpatterns in urls.py
+6. Run development server with: `./manage.py runserver`
+7. Open `http://127.0.0.1:8000/` in your browser
