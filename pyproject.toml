@@ -8,6 +8,7 @@ repository = "https://github.com/v3l0c1r4pt0r/adaptwms"
 classifiers = [
   "Framework :: Django"
 ]
+include = ["adaptwms/templates"]
 
 [tool.poetry.dependencies]
 python = "^3.11"
