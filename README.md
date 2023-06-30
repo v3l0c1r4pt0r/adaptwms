@@ -51,6 +51,6 @@ This makes use of pip package available on PyPI and Django project that you have
 2. Start new django project: `django-admin startproject demo .`, where demo is its name, or use existing one
 3. Install adaptwms from PyPI: `pip install adaptwms`
 4. Add `adaptwms` to your `INSTALLED_APPS` in settings.py
-5. Add `path("adaptwms/", adaptwms.views.adapter_view),` to your urlpatterns in urls.py
+5. Add `path("adaptwms/", adaptwms.views.adapter_view),` to your urlpatterns in urls.py (same could be done for `adaptwms.views.InterfaceView.as_view()` if you want to have interactive generator for adaptwms URLs)
 6. Run development server with: `./manage.py runserver`
 7. Open `http://127.0.0.1:8000/` in your browser
