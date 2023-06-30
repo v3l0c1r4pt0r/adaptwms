@@ -18,6 +18,7 @@ jobs:
     - name: Validate up-to-date requirements.txt
       run: |
         curl -sSL https://install.python-poetry.org | python3 -
+        poetry lock
         poetry export --without-hashes --format=requirements.txt >requirements2.txt
         diff -u requirements.txt requirements2.txt
   build:
