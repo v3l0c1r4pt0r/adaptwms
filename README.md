@@ -35,6 +35,12 @@ These are the known constraints:
 
 This makes use of this Github project and demo project it supplies. Best for testing, or temporary deployement.
 
+1. Make sure you have Python and pip installed
+2. Clone repo: `git clone git@github.com:v3l0c1r4pt0r/adaptwms.git` and enter it: `cd adaptwms`
+3. Install all requirements: `pip install -r requirements.txt`
+4. Run development server with: `./manage.py runserver`
+5. Open `http://127.0.0.1:8000/` in your browser
+
 **TODO**: write
 
 ### ...if I do have some experience with Django
