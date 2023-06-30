@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "adaptwms"
-version = "0.1.0"
+version = "0.1.1"
 description = ""
 authors = ["v3l0c1r4pt0r <v3l0c1r4pt0r@gmail.com>"]
 readme = "README.md"
