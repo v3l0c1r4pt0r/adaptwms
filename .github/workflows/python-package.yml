@@ -13,8 +13,7 @@ jobs:
     - uses: actions/checkout@v3
     - name: Validate up-to-date requirements.txt
       run: |
-        sudo apt-get update -y
-        sudo apt-get install -y poetry
+        curl -sSL https://install.python-poetry.org | python3 -
         poetry export --without-hashes --format=requirements.txt >requirements2.txt
         diff -u requirements.txt requirements2.txt
   build:
