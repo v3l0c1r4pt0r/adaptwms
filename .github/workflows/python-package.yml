@@ -13,7 +13,7 @@ jobs:
     - uses: actions/checkout@v3
     - name: Validate up-to-date requirements.txt
       run: |
-        apt-get install -y poetry
+        sudo apt-get install -y poetry
         poetry export --without-hashes --format=requirements.txt >requirements2.txt
         diff -u requirements.txt requirements2.txt
   build:
