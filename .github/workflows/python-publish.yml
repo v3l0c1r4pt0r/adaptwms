@@ -27,4 +27,4 @@ jobs:
     - name: Build package
       run: poetry build
     - name: Publish package
-      run: poetry publish -u ${{ env.PYPI_LOGIN }} -p ${{ secrets.PYPI_API_TOKEN }}
+      run: poetry publish -u ${{ vars.PYPI_LOGIN }} -p ${{ secrets.PYPI_API_TOKEN }}
